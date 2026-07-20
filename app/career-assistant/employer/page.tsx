@@ -16,6 +16,7 @@ import ToolCard from "../components/ToolCard";
 export default function EmployerPage() {
   return (
     <main className="min-h-screen bg-gradient-hero">
+
       <div className="mx-auto max-w-6xl px-6 py-10 md:py-14">
 
         <Link

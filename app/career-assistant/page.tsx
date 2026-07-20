@@ -5,7 +5,8 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
+import Image from "next/image";
 import {
   Sparkles,
   User,
@@ -37,20 +38,6 @@ export default function LandingPage() {
 
   return (
     <main className="min-h-screen bg-gradient-hero overflow-x-hidden">
-      {/* Nav */}
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-        <Link href="/" className="flex items-center gap-2 cursor-pointer group">
-          <div className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-primary shadow-soft transition-transform group-hover:scale-110">
-            <Sparkles className="h-5 w-5 text-primary-foreground" />
-          </div>
-          <span className="text-lg font-bold tracking-tight">Growvelt</span>
-        </Link>
-        <div className="hidden items-center gap-6 md:flex">
-          <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition cursor-pointer">Features</a>
-          <a href="#how" className="text-sm text-muted-foreground hover:text-foreground transition cursor-pointer">How it works</a>
-          
-        </div>
-      </nav>
 
       {/* Hero */}
       <section className="relative mx-auto max-w-7xl px-6 pt-12 pb-24 md:pt-20">
@@ -206,7 +193,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      
     </main>
   );
 }

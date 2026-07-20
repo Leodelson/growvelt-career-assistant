@@ -86,5 +86,23 @@ body { background: var(--background); color: var(--foreground); }
 
 
 body {
-  background: red !important;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-down {
+  animation: fade-down 0.25s ease-out;
 }
